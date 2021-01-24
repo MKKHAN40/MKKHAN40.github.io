@@ -1,0 +1,50 @@
+.text_effects {
+    text-shadow: 2px 4px 5px blue;
+    padding-top:2 rem;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+/*fontcss3*/
+@font-face {
+    font-family:kuch bhi;
+    src:url('go3v2.ttf');
+}
+.font_about{
+    font-family:kuch bhi;
+}
+/*fontcss3 end*/
+/*animationcss3 start*/
+.batman{
+    width: 100%; height: 100%; position: relative; background-color:none;
+}
+.batman img{
+    width: 250px;
+    height: 200px;
+    position: relative;
+    bottom:-21px;
+    left: 0%;
+    animation-name: batman;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes batman{
+    from{left: 0%;}
+    to{left: 85%;}
+}
+/*animation end*/
+/*transition css3 start*/
+
+
+.pic{
+    width:5%;
+    height: 5%;
+    transition-property: width,height;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.pic:hover{
+    width: 10%;
+    height: 10%;
+}
